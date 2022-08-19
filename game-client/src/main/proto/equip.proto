@@ -1,0 +1,14 @@
+syntax = "proto3"; //版本
+
+option java_package = "com.task.entity";//生成类的包名
+option java_outer_classname = "MyEquip";//生成的外部类名，同时也是文件名
+
+message Accouter {
+  string name=1;    //装备名字
+  string type=2;    //类型
+  string garde=3;   //品级
+  float consume=4;  //升级耗费初始值
+  float initial=5;  //初始值
+  float grow=6;     //成长
+  string phyle=7;   //种族属性
+}
